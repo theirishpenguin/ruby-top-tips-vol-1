@@ -134,7 +134,7 @@ RSpec.describe BeanCatalog, type: :model do
 
   describe "#get_doubled_normalised_price... and variants" do
 
-    # Top Tip 4: When writing IF consider ELSE.
+    # Top Tip 4: When writing IF consider ELSE (and more "functional IFs")
     # This is be thought of as the "forgotten nil" problem. Amazingly, this
     # is a surprisingly frequent occurence in Ruby codebases.
 
