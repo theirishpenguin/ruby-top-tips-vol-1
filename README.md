@@ -2,7 +2,8 @@
 All the top tips are listed in the following spec -
 [spec/lib/bean_catalog_spec.rb](https://github.com/theirishpenguin/ruby-top-tips-vol-1/blob/main/spec/lib/bean_catalog_spec.rb)
 
-Top Tip 1: Use hash_including() to ensure we call the service with the
+[Top Tip
+1](https://github.com/theirishpenguin/ruby-top-tips-vol-1/blob/main/spec/lib/bean_catalog_spec.rb#L9): Use hash_including() to ensure we call the service with the
 right "shape"
 
 Top Tip 2: Use a receive() with a block to debug the arguments
