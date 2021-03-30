@@ -39,6 +39,18 @@ module BeanCatalog
       end
     end
 
+    def get_doubled_normalised_price_for_the_last_time(price_as_integer)
+      # Just noting here that it can be nice to assign into a variable directly
+      # off an IF statement "Elixir-style"...
+      integer_text = if price_as_integer >= 0
+        "€#{price_as_integer * 2}"
+      else
+        "-€#{price_as_integer.abs * 2}"
+      end
+
+      "#{integer_text}.00"
+    end
+
     def what_is_my_economic_status(savings_as_integer)
       case savings_as_integer
       when 0 then "Not great!"

@@ -9,8 +9,6 @@ Top Tip 2: Use a receive() with a block to debug the arguments
 
 Top Tip 3: Escape complex phrases in regular expressions
 
-Top Tip 4: When writing IF consider ELSE
+Top Tip 4: When writing IF consider ELSE (and more "functional IFs")
 
 Top Tip 5: Similar to Top Tip 4 but for CASE statements
-
-So, take a look there to see them!

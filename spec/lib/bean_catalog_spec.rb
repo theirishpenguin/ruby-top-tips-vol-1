@@ -132,7 +132,7 @@ RSpec.describe BeanCatalog, type: :model do
 
   end # of describe "Err... Nothing to do with beans"
 
-  describe "#get_doubled_normalised_price" do
+  describe "#get_doubled_normalised_price... and variants" do
 
     # Top Tip 4: When writing IF consider ELSE.
     # This is be thought of as the "forgotten nil" problem. Amazingly, this
@@ -162,12 +162,23 @@ RSpec.describe BeanCatalog, type: :model do
 
     # Firstly, we get the same behaviour but at least are making a conscious decision
     it "should double and normalise price for negative integer (ELSE returns nil)" do
-      expect(BeanCatalog.get_doubled_normalised_price_again(-price_as_integer)).to eql(nil)
+      expect(
+        BeanCatalog.get_doubled_normalised_price_again(-price_as_integer)
+      ).to eql(nil)
     end
 
     # Then, we improve the behaviour
     it "should double and normalise price for negative integer (ELSE returns negative)" do
-      expect(BeanCatalog.get_doubled_normalised_price_yet_again(-price_as_integer)).to eql("-€14.00")
+      expect(
+        BeanCatalog.get_doubled_normalised_price_yet_again(-price_as_integer)
+      ).to eql("-€14.00")
+    end
+
+    # Finally, the implemented method shows direct assignment of IF to variable
+    it "should double and normalise price for negative integer (ELSE returns negative)" do
+      expect(
+        BeanCatalog.get_doubled_normalised_price_for_the_last_time(-price_as_integer)
+      ).to eql("-€14.00")
     end
   end
 
